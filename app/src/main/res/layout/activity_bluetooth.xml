@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接"
+        />
+
+    <Button
+        android:id="@+id/btn_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测量"
+        />
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        />
+    <Button
+        android:id="@+id/btn_disConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="断开连接"
+        />
+    <TextView
+        android:id="@+id/tv_deviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deviceName"
+        />
+    <TextView
+        android:id="@+id/tv_conncetStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connectStatus"
+        />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"
+        />
+
+
+</LinearLayout>

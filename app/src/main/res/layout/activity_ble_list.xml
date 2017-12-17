@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="蓝牙列表"
+        />
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描"
+        />
+    <Button
+        android:id="@+id/btn_stopScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        />
+    <EditText
+        android:id="@+id/et_pinCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="166909"
+        tools:ignore="LabelFor"/>
+
+    <ListView
+        android:id="@+id/lv_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
