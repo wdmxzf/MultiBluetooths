@@ -2,7 +2,7 @@
 蓝牙多设备连接，支持公开协议和私有协议
 
 ## 工具使用
-稍后我会上川岛Jcenter(),使用 implementation 直接引用。
+
 把工程引入项目：
 ```groovy
 compile project(':ZHGBluetooth')
@@ -76,7 +76,7 @@ public class BeitaiBluetoothAdapter extends BaseBluetoothAdapter {
 
 }
 ```
-### 实现完adapter后，在assets文件下穿件一个叫bluetooth的xml（bluetooth.xml）
+### 实现完adapter后，在assets文件下创建一个叫bluetooth的xml（bluetooth.xml）
 
 ```xml
 <bluetooth>
