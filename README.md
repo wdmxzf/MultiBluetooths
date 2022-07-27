@@ -10,18 +10,18 @@ compile project(':ZHGBluetooth')
 ### 在AndroidManifest.xml文件中声明BluetoothService
 * 使用默认 action
 ```xml
-        <service android:name="com.homehealth.hhcbluetooth.service.GGBLEService"
+        <service android:name="com.zhg.bluetoothL.service.ZHGBLEService"
                  android:enabled="true"
                  android:exported="false">
             <intent-filter>
-                <action android:name="com.GeGee.library.bluetooth.GGBLEService"/>
+                <action android:name="com.zhg.bluetoothL.service.ZHGBLEService"/>
             </intent-filter>
         </service>
 ```
 
 * 使用自定义 action (xxxxxxxxx)
 ```xml
-<service android:name="com.homehealth.hhcbluetooth.service.GGBLEService"
+<service android:name="com.zhg.bluetoothL.service.ZHGBLEService"
                  android:enabled="true"
                  android:exported="false">
             <intent-filter>
@@ -33,7 +33,7 @@ compile project(':ZHGBluetooth')
 ### 创建类 继承 BaseBluetoothAdapter 并实现里面的方法
 
 ```java
-public class BeitaiBluetoothAdapter extends BaseBluetoothAdapter {
+public class MyBleAdapter extends BaseBluetoothAdapter {
 
     private CompleteModel completeModel = new CompleteModel();
     private ErrorModel errorModel = new ErrorModel();
@@ -82,7 +82,7 @@ public class BeitaiBluetoothAdapter extends BaseBluetoothAdapter {
 <bluetooth>
 
     <list>
-        <mapping class = "com.homehealth.androidlibrary.bluetotoh.adapter.BeitaiBluetoothAdapter"/>
+        <mapping class = "com.zhg.bluetooth.MyBleAdapter"/>
     </list>
 
 </bluetooth>
@@ -94,8 +94,8 @@ public class BeitaiBluetoothAdapter extends BaseBluetoothAdapter {
     <dbname value="ble"/>
     <version value="2"/>
     <list>
-        <mapping class="com.homehealth.hhcbluetooth.entity.GGBLEDeviceEntity"/>
-        <mapping class="com.homehealth.hhcbluetooth.entity.CompleteModel"/>
+        <mapping class="com.zhg.bluetoothL.entity.ZHGBLEDeviceEntity"/>
+        <mapping class="com.zhg.bluetoothL.entity.CompleteModel"/>
     </list>
 </litepal>
 ```
